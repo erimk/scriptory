@@ -64,7 +64,7 @@ No lugar de git@github.com, use o Host que você definiu (github-clienteA ou git
 git clone git@github-clienteA:usuario/repo-cliente-a.git ~/projetos/clienteA
 
 # Clone como cliente B
-git clone git@github-clienteB:usuario/repo-cliente-b.git ~/projetos/clienteB
+git clone git@github:clientB/repo-cliente-b.git ~/projetos/clienteB
 ~~~
 
 ✅ 5. Configure o usuário Git local em cada projeto
