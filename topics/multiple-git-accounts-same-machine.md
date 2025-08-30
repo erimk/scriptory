@@ -22,12 +22,19 @@ cat ~/.ssh/id_ed25519_clienteA.pub
 
 nos perfis correspondente em `https://github.com/settings/keys`
 
-## ✅ 2. Adicione as chaves ao ssh-agent (opcional mas recomendado)
+## ✅ 2. Adicione as chaves ao ssh-agent
+
+Para utilizar as chaves ssh ao rodar alguma IDE a partir do terminar e evitar o problema de autenticação é necessário rodar no mesmo terminal que inicializar a aplicação como por exemplo, vscode:
 
 ~~~bash
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519_clienteA
 ssh-add ~/.ssh/id_ed25519_clienteB
+~~~
+then, for vscode 
+~~~bash
+cd ~/projetos/clienteA
+code .
 ~~~
 
 ## ✅ 3. Configure o arquivo ~/.ssh/config
